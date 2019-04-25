@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-// random color all the time
+// The gameobject will change color every frame
 public class randomcolor : MonoBehaviour 
 {
 	public Color color = new Color(0.2F, 0.3F, 0.4F, 0.5F);
