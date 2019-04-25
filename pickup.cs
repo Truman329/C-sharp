@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 // This code is used on a objective and when a player touch the objective
-//The objective will disappear
+//The objective will turn off
 public class pickup : MonoBehaviour
 {
     // Start is called before the first frame update
