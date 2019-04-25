@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
-public class movement : MonoBehaviour
+// This code control the player movement 
+//and their ability to pick up a gameobject while keeping track of the amount that they are picking up 
+public class playerz : MonoBehaviour
 {
     public GameObject player;
     //public Vector3 teleport;
