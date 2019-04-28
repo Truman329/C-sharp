@@ -14,6 +14,7 @@ public class playerz : MonoBehaviour
     private int count;
     public Text countText;
     public Text winText;
+    public Color color = new Color(0.2F, 0.3F, 0.4F, 0.5F);
 
 
     // Use this for initialization
@@ -52,6 +53,12 @@ public class playerz : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+            color = new Color(Random.value, Random.value, Random.value, Random.value); 
+		    gameObject.GetComponent<SpriteRenderer> ().color = color;
+
+	}
+}
+
         }
     }
     void SetCountText()
@@ -59,7 +66,7 @@ public class playerz : MonoBehaviour
         countText.text = "Cherry: " + count.ToString();
         if (count >= 1)
         {
-            winText.text = "You won";
+            winText.text = "The door has open";
         }
     }
     
